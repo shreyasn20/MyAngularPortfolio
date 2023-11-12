@@ -1,4 +1,5 @@
 export class Tag{
+    [x: string]: any;
     static readonly ANGULAR = new Tag('Angular','red');
     static readonly TYPESCRIPT= new Tag('Typescript','darkred');
     static readonly PYTHON = new Tag('Python','pink');
