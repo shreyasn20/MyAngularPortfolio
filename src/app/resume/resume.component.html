@@ -1,1 +1,128 @@
-<p>resume works!</p>
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">
+        Download PDF Resume
+    </button>
+
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienaceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                <div class="btn-link">Work Experience</div>
+
+                <div style="width: 10.95px;">
+                    <div *ngIf="!isWorkExperienaceOpen" style="color: white;">></div>
+                    <div *ngIf="isWorkExperienaceOpen" style="color: white;">v</div>
+                </div>
+                </button>
+                
+
+                
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Engineer</h2>
+                    <h3 class="text-primary">Infosys LTD</h3>
+                    <ul>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum cum ipsam, iure doloribus impedit nulla cumque? Voluptas laboriosam, itaque iste nostrum maiores aut iure in, aperiam, quisquam repellat blanditiis minima.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae perspiciatis ducimus tenetur repudiandae id, aliquam necessitatibus natus est odio aliquid nesciunt aut, nam dolorum atque excepturi saepe molestias officiis eum.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi unde eaque eligendi eum distinctio iure adipisci, minus aperiam animi quae velit rerum ab expedita ea sint voluptas blanditiis delectus cumque.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eum molestias accusantium incidunt, possimus nobis repellat explicabo inventore minima laboriosam. Facilis, molestias ut vitae quae voluptas deleniti odit accusamus earum?</li>
+                    </ul>
+                </div>
+                
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isEducationOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                <div class="btn-link">Education</div>
+
+                <div style="width: 10.95px;">
+                    <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                    <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                </div>
+                </button>
+
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Software Engineer</h2>
+                    <h3 class="text-primary">Infosys LTD</h3>
+                    <ul>
+                        <li>Graduated from DBATU in Nov 2021</li>
+                        <li>CGPA: 8.04</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi unde eaque eligendi eum distinctio iure adipisci, minus aperiam animi quae velit rerum ab expedita ea sint voluptas blanditiis delectus cumque.</li>
+                        <li>Participated in extracurricular clubs such as Robotics team,Drama club and more!</li>
+                    </ul>
+                </div>
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isCertificationsOpen">
+
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                <div class="btn-link">Certifications</div>
+
+                <div style="width: 10.95px;">
+                    <div *ngIf="!isCertificationsOpen" style="color: white;">></div>
+                    <div *ngIf="isCertificationsOpen" style="color: white;">v</div>
+                </div>
+                </button>
+
+                <div style="text-align: left;">
+                    <h3>MS Azure 900</h3>
+                    <ul>
+                       <li>Obtained in Aug 2023</li>
+                       <li>#5485989409</li>
+                    </ul>
+                    <h3>Google IT Support Specialist</h3>
+                    <ul>
+                       <li>Obtained in Sep 2023</li>
+                       <li>#94859894094</li>
+                    </ul>
+                </div>
+            </accordion-group>
+    
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                <div class="btn-link">Skills</div>
+
+                <div style="width: 10.95px;">
+                    <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                    <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                </div>
+                </button>
+
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Programming Languages:</h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>Typescript</li>
+                            <li>Python</li>
+                            <li>C#</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks:</h3>
+                        <ul>
+                            <li>Angular</li>
+                            <li>React</li>
+                            <li>ASP.NET</li>
+                            <li>Node.JS</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Other Skills:</h3>
+                        <ul>
+                            <li>Source control via git</li>
+                            <li>MVC Architecture</li>
+                            <li>Agile Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+
+        </accordion>
+    </div>
+    
+</div>

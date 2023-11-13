@@ -15,6 +15,9 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FormsModule } from '@angular/forms';
+import { NgxExtendedPdfViewerModule} from 'ngx-extended-pdf-viewer';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +29,6 @@ import { FormsModule } from '@angular/forms';
     ContactComponent,
     ProjectCardComponent,
     ProjectModalComponent,
-    
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,9 @@ import { FormsModule } from '@angular/forms';
     ModalModule.forRoot(),
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
-    FormsModule
+    FormsModule,
+    NgxExtendedPdfViewerModule,
+    AccordionModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
